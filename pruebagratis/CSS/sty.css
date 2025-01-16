@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans';
+}
+
+header {
+    text-align: center;
+    background: #014e0f;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    border: 2px solid #058508;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
+}
+
+label:hover {
+    background: #cec0fc;
+}
+
+label.correcta {
+    background-color: #d4edda; /* Verde claro */
+    border: 2px solid #28a745; /* Verde */
+}
+
+label.incorrecta {
+    background-color: #f8d7da; /* Rojo claro */
+    border: 2px solid #dc3545; /* Rojo */
+}
+
+button {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #dba907;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background: #000;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+#resultado {
+    font-size: 30px;
+    color: darkred;
+}
+
+.question-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resumen ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resumen li.correcta {
+    color: green; /* Texto en verde para respuestas correctas */
+    font-weight: bold;
+}
+
+.resumen li.incorrecta {
+    color: red; /* Texto en rojo para respuestas incorrectas */
+    font-weight: bold;
+}
+
+.mensaje {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
