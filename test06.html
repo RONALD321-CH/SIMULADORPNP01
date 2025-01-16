@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSICOMETRICO</title>
+    <link rel="stylesheet" href="CSS/sty.css">
+</head>
+<body>
+    <header>
+        <h1>TEST DE PERSONALIDAD </h1>
+        <p>INTERMEDIO</p>
+    </header>
+
+    <div class="container">
+        <!-- Preguntas -->
+        <!-- Repetir estructura para cada pregunta -->
+
+        <section id="p0" class="question">
+            <h3>1. Generalmente tiene que luchar demasiado para conseguir sus derechos?</h3>
+            <label><input type="radio" value="1" name="p0" onclick="respuesta(0, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p0" onclick="respuesta(0, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p0" onclick="respuesta(0, this)"> C. No</label>
+            <p id="mensaje-p0" class="mensaje"></p>
+            <button onclick="mostrarPregunta(1)">Siguiente</button>
+        </section>
+        
+        <section id="p1" class="question" style="display: none;">
+            <h3>2. ¿Siente frecuentemente que los jefes son muy injustos por lo que busca las formas de evitar sus mandatos?</h3>
+            <label><input type="radio" value="1" name="p1" onclick="respuesta(1, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p1" onclick="respuesta(1, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p1" onclick="respuesta(1, this)"> C. No</label>
+            <p id="mensaje-p1" class="mensaje"></p>
+            <button onclick="mostrarPregunta(0)">Anterior</button><br>
+            <button onclick="mostrarPregunta(2)">Siguiente</button>
+        </section>
+        
+        <section id="p2" class="question" style="display: none;">
+            <h3>3. ¿Le sucede que las personas que conoce son tan tercas que tiene necesidad de criticarlas severamente?</h3>
+            <label><input type="radio" value="1" name="p2" onclick="respuesta(2, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p2" onclick="respuesta(2, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p2" onclick="respuesta(2, this)"> C. No</label>
+            <p id="mensaje-p2" class="mensaje"></p>
+            <button onclick="mostrarPregunta(1)">Anterior</button><br>
+            <button onclick="mostrarPregunta(3)">Siguiente</button>
+        </section>
+        
+        <section id="p3" class="question" style="display: none;">
+            <h3>4. ¿Se le hace difícil que las demás personas reconozcan sus habilidades?</h3>
+            <label><input type="radio" value="1" name="p3" onclick="respuesta(3, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p3" onclick="respuesta(3, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p3" onclick="respuesta(3, this)"> C. No</label>
+            <p id="mensaje-p3" class="mensaje"></p>
+            <button onclick="mostrarPregunta(2)">Anterior</button><br>
+            <button onclick="mostrarPregunta(4)">Siguiente</button>
+        </section>
+        
+        <section id="p4" class="question" style="display: none;">
+            <h3>5. Envidia a los millonarios?</h3>
+            <label><input type="radio" value="1" name="p4" onclick="respuesta(4, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p4" onclick="respuesta(4, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p4" onclick="respuesta(4, this)"> C. No</label>
+            <p id="mensaje-p4" class="mensaje"></p>
+            <button onclick="mostrarPregunta(3)">Anterior</button><br>
+            <button onclick="mostrarPregunta(5)">Siguiente</button>
+        </section>
+        
+        <section id="p5" class="question" style="display: none;">
+            <h3>6. ¿Si heredara una fortuna, cambiaría radicalmente su vida?</h3>
+            <label><input type="radio" value="1" name="p5" onclick="respuesta(5, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p5" onclick="respuesta(5, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p5" onclick="respuesta(5, this)"> C. No</label>
+            <p id="mensaje-p5" class="mensaje"></p>
+            <button onclick="mostrarPregunta(4)">Anterior</button><br>
+            <button onclick="mostrarPregunta(6)">Siguiente</button>
+        </section>
+        
+        <section id="p6" class="question" style="display: none;">
+            <h3>7. ¿Piensa que tiene derecho a hacer lo que le plazca en su propia casa?</h3>
+            <label><input type="radio" value="1" name="p6" onclick="respuesta(6, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p6" onclick="respuesta(6, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p6" onclick="respuesta(6, this)"> C. No</label>
+            <p id="mensaje-p6" class="mensaje"></p>
+            <button onclick="mostrarPregunta(5)">Anterior</button><br>
+            <button onclick="mostrarPregunta(7)">Siguiente</button>
+        </section>
+        
+        <section id="p7" class="question" style="display: none;">
+            <h3>8. ¿Te cuesta trabajo que estás equivocado?</h3>
+            <label><input type="radio" value="1" name="p7" onclick="respuesta(7, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p7" onclick="respuesta(7, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p7" onclick="respuesta(7, this)"> C. No</label>
+            <p id="mensaje-p7" class="mensaje"></p>
+            <button onclick="mostrarPregunta(6)">Anterior</button><br>
+            <button onclick="mostrarPregunta(8)">Siguiente</button>
+        </section>
+        
+        <section id="p8" class="question" style="display: none;">
+            <h3>9. ¿Crees que los hombres son superiores a las mujeres?</h3>
+            <label><input type="radio" value="1" name="p8" onclick="respuesta(8, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p8" onclick="respuesta(8, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p8" onclick="respuesta(8, this)"> C. No</label>
+            <p id="mensaje-p8" class="mensaje"></p>
+            <button onclick="mostrarPregunta(7)">Anterior</button><br>
+            <button onclick="mostrarPregunta(9)">Siguiente</button>
+        </section>
+        
+        <section id="p9" class="question" style="display: none;">
+            <h3>10. ¿Crees que el sentimentalismo es estúpido o señal de debilidad?</h3>
+            <label><input type="radio" value="1" name="p9" onclick="respuesta(9, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p9" onclick="respuesta(9, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p9" onclick="respuesta(9, this)"> C. No</label>
+            <p id="mensaje-p9" class="mensaje"></p>
+            <button onclick="mostrarPregunta(8)">Anterior</button><br>
+            <button onclick="mostrarPregunta(10)">Siguiente</button>
+        </section>
+        
+        <section id="p10" class="question" style="display: none;">
+            <h3>11. Respetas las creencias religiosas de tus amigos?</h3>
+            <label><input type="radio" value="1" name="p10" onclick="respuesta(10, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p10" onclick="respuesta(10, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p10" onclick="respuesta(10, this)"> C. No</label>
+            <p id="mensaje-p10" class="mensaje"></p>
+            <button onclick="mostrarPregunta(9)">Anterior</button><br>
+            <button onclick="mostrarPregunta(11)">Siguiente</button>
+        </section>
+        
+        <section id="p11" class="question" style="display: none;">
+            <h3>12. ¿A menudo toma decisiones sin consultar con otros?</h3>
+            <label><input type="radio" value="1" name="p11" onclick="respuesta(11, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p11" onclick="respuesta(11, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p11" onclick="respuesta(11, this)"> C. No</label>
+            <p id="mensaje-p11" class="mensaje"></p>
+            <button onclick="mostrarPregunta(10)">Anterior</button><br>
+            <button onclick="mostrarPregunta(12)">Siguiente</button>
+        </section>
+        
+        <section id="p12" class="question" style="display: none;">
+            <h3>13. ¿Tiene varios amigos íntimos entre sus compañeros de trabajo?</h3>
+            <label><input type="radio" value="1" name="p12" onclick="respuesta(12, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p12" onclick="respuesta(12, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p12" onclick="respuesta(12, this)"> C. No</label>
+            <p id="mensaje-p12" class="mensaje"></p>
+            <button onclick="mostrarPregunta(11)">Anterior</button><br>
+            <button onclick="mostrarPregunta(13)">Siguiente</button>
+        </section>
+        
+        <section id="p13" class="question" style="display: none;">
+            <h3>14. ¿Estima y admira a sus superiores?</h3>
+            <label><input type="radio" value="1" name="p13" onclick="respuesta(13, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p13" onclick="respuesta(13, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p13" onclick="respuesta(13, this)"> C. No</label>
+            <p id="mensaje-p13" class="mensaje"></p>
+            <button onclick="mostrarPregunta(12)">Anterior</button><br>
+            <button onclick="mostrarPregunta(14)">Siguiente</button>
+        </section>
+        
+        <section id="p14" class="question" style="display: none;">
+            <h3>15. Si tiene alguna queja o algún problema, ¿se lo dice a manera franca a su superior?</h3>
+            <label><input type="radio" value="1" name="p14" onclick="respuesta(14, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p14" onclick="respuesta(14, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p14" onclick="respuesta(14, this)"> C. No</label>
+            <p id="mensaje-p14" class="mensaje"></p>
+            <button onclick="mostrarPregunta(13)">Anterior</button><br>
+            <button onclick="mostrarPregunta(15)">Siguiente</button>
+        </section>
+        
+        <section id="p15" class="question" style="display: none;">
+            <h3>16. ¿Guarda todas las reglas de seguridad?</h3>
+            <label><input type="radio" value="1" name="p15" onclick="respuesta(15, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p15" onclick="respuesta(15, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p15" onclick="respuesta(15, this)"> C. No</label>
+            <p id="mensaje-p15" class="mensaje"></p>
+            <button onclick="mostrarPregunta(14)">Anterior</button><br>
+            <button onclick="mostrarPregunta(16)">Siguiente</button>
+        </section>
+        
+        <section id="p16" class="question" style="display: none;">
+            <h3>17. ¿Podría decir con sinceridad que le agrada el trabajo que está haciendo?</h3>
+            <label><input type="radio" value="1" name="p16" onclick="respuesta(16, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p16" onclick="respuesta(16, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p16" onclick="respuesta(16, this)"> C. No</label>
+            <p id="mensaje-p16" class="mensaje"></p>
+            <button onclick="mostrarPregunta(15)">Anterior</button><br>
+            <button onclick="mostrarPregunta(17)">Siguiente</button>
+        </section>
+        
+        <section id="p17" class="question" style="display: none;">
+            <h3>18. ¿Se siente incómodo o miedoso en presencia de extraños?</h3>
+            <label><input type="radio" value="1" name="p17" onclick="respuesta(17, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p17" onclick="respuesta(17, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p17" onclick="respuesta(17, this)"> C. No</label>
+            <p id="mensaje-p17" class="mensaje"></p>
+            <button onclick="mostrarPregunta(16)">Anterior</button><br>
+            <button onclick="mostrarPregunta(18)">Siguiente</button>
+        </section>
+        
+        <section id="p18" class="question" style="display: none;">
+            <h3>19. ¿Cree que, en términos generales, la vida es cuestión de sálvese quien pueda?</h3>
+            <label><input type="radio" value="1" name="p18" onclick="respuesta(18, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p18" onclick="respuesta(18, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p18" onclick="respuesta(18, this)"> C. No</label>
+            <p id="mensaje-p18" class="mensaje"></p>
+            <button onclick="mostrarPregunta(17)">Anterior</button><br>
+            <button onclick="mostrarPregunta(19)">Siguiente</button>
+        </section>
+        
+        <section id="p19" class="question" style="display: none;">
+            <h3>20. ¿A Ud. le caen bien todas las personas que conoce?</h3>
+            <label><input type="radio" value="1" name="p19" onclick="respuesta(19, this)"> A. Si</label>
+            <label><input type="radio" value="2" name="p19" onclick="respuesta(19, this)"> B. En duda</label>
+            <label><input type="radio" value="3" name="p19" onclick="respuesta(19, this)"> C. No</label>
+            <p id="mensaje-p19" class="mensaje"></p>
+            <button onclick="mostrarPregunta(18)">Anterior</button><br>
+            <button onclick="mostrarResultados()">Finalizar</button>
+        </section>
+    
+
+        <!-- Resultados -->
+        <section id="resultados" style="display: none;">
+            <h2>Resultados del cuestionario</h2>
+            <h3>Cantidad de acertadas: <span id="resultado">0</span></h3>
+            <div id="detalle"></div>
+            <div id="resumen" class="resumen"></div>
+        </section>
+    </div>
+</body>
+<script src="JS/test06.js"></script>
+</html>

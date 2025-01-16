@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATERIAL PNP</title>
+    <link rel="stylesheet" href="sitio/CSS/sty.css">
+
+    <style>
+        .long-center{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            overflow-x: hidden;
+        }
+
+        .login-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+
+        .login-container input[type="text"]:focus,
+        .login-container input[type="password"]:focus {
+            border-color: #2a5298;
+            box-shadow: 0 0 8px rgba(42, 82, 152, 0.4);
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background: #1e3c72;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .login-container button:hover {
+            background: #2a5298;
+            transform: scale(1.05);
+        }
+
+        .login-container a {
+            display: block;
+            margin-top: 15px;
+            color: #1e3c72;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .login-container a:hover {
+            color: #2a5298;
+        }
+
+        .login-container .link {
+            margin-top: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            width: 45%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .button-container button:hover {
+            transform: scale(1.05);
+        }
+
+        .login-btn {
+            background: #1e3c72;
+            color: #fff;
+        }
+
+        .login-btn:hover {
+            background: #2a5298;
+        }
+
+        .trial-btn {
+            background: #f0ad4e;
+            color: #fff;
+        }
+
+        .trial-btn:hover {
+            background: #ec971f;
+        }
+
+    </style>
+</head>
+<body class="long-center">
+    <header>
+        <a href="index.html">
+            <img src="sitio/IMG/LOGO.png" alt="Logo" class="logo" width="50">
+        </a>
+        <h1>ADMISIONPNP.INFO</h1>
+        <a href="index.html" class="button">Ir a Inicio</a>
+    </header>
+
+
+
+    <div class="login-container">
+        <h2>Bienvenido de nuevo</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Ingresa su usuario" required>
+            <input type="password" id="password" placeholder="Ingresa su contraseña" required>
+            <div class="button-container">
+                <button type="submit" class="login-btn">Entrar</button>
+                <button type="button" class="trial-btn">Prueba gratuita</button>
+            </div>
+        </form>
+        <div class="link">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <a href="#">Crear una cuenta</a>
+        </div>
+    </div>
+
+    <script>
+
+const loginForm = document.getElementById('loginForm');
+
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username === 'admin984406487' && password === 'admision.info') {
+        // Redirigir a preguntas.html directamente sin mostrar mensaje
+        window.location.href = "preguntas.html";
+    } else {
+        alert('Usuario o contraseña incorrectos.');
+    }
+});
+
+// Redirigir a una página específica al hacer clic en el botón "Prueba gratuita"
+document.querySelector('.trial-btn').addEventListener('click', () => {
+    window.location.href = "pruebagratis/preguntas.html"; // Cambia "prueba_gratuita.html" por la página que desees
+});
+
+
+
+    </script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSICOMETRICO</title>
+    <link rel="stylesheet" href="CSS/sty.css">
+</head>
+<body>
+    <header>
+        <h1>PSICOMETRICO PRUEBA DE INTELIGENCIA</h1>
+        <p>INTERMEDIO</p>
+    </header>
+
+    <div class="container">
+        <!-- Preguntas -->
+        <!-- Repetir estructura para cada pregunta -->
+        <section id="p0" class="question">
+            <h3>1 - PRACTICA</h3>
+            <img src="img007/01.png" alt="Imagen de la pregunta 1" class="question-image">
+            <label><input type="radio" value="1" name="p0" onclick="respuesta(0, this)"> A. </label>
+            <label><input type="radio" value="2" name="p0" onclick="respuesta(0, this)"> B. </label>
+            <label><input type="radio" value="3" name="p0" onclick="respuesta(0, this)"> C. </label>
+            <label><input type="radio" value="4" name="p0" onclick="respuesta(0, this)"> D. </label>
+            <label><input type="radio" value="5" name="p0" onclick="respuesta(0, this)"> E. </label>
+            <p id="mensaje-p0" class="mensaje"></p>
+            
+            <div class="respuesta-imagen-contenedor"></div>
+
+            <button onclick="mostrarPregunta(1)">Siguiente</button>
+        </section>
+
+        <section id="p1" class="question" style="display: none;">
+            <h3>2 - PRACTICA</h3>
+            <img src="img007/02.png" alt="Imagen de la pregunta 2" class="question-image">
+            <label><input type="radio" value="1" name="p1" onclick="respuesta(1, this)"> A. </label>
+            <label><input type="radio" value="2" name="p1" onclick="respuesta(1, this)"> B. </label>
+            <label><input type="radio" value="3" name="p1" onclick="respuesta(1, this)"> C. </label>
+            <label><input type="radio" value="4" name="p1" onclick="respuesta(1, this)"> D. </label>
+            <label><input type="radio" value="5" name="p1" onclick="respuesta(1, this)"> E. </label>
+            <p id="mensaje-p1" class="mensaje"></p>
+            <div class="respuesta-imagen-contenedor"></div>
+            <button onclick="mostrarPregunta(0)">Anterior</button><br>
+            <button onclick="mostrarPregunta(2)">Siguiente</button>
+        </section>
+
+        <section id="p2" class="question" style="display: none;">
+            <h3>3 - PRACTICA</h3>
+            <img src="img007/03.png" alt="Imagen de la pregunta 2" class="question-image">
+            <label><input type="radio" value="1" name="p2" onclick="respuesta(2, this)"> A. </label>
+            <label><input type="radio" value="2" name="p2" onclick="respuesta(2, this)"> B. </label>
+            <label><input type="radio" value="3" name="p2" onclick="respuesta(2, this)"> C. </label>
+            <label><input type="radio" value="4" name="p2" onclick="respuesta(2, this)"> D. </label>
+            <label><input type="radio" value="5" name="p2" onclick="respuesta(2, this)"> E. </label>
+            <p id="mensaje-p2" class="mensaje"></p>
+            <div class="respuesta-imagen-contenedor"></div>
+            
+            <button onclick="mostrarPregunta(1)">Anterior</button><br>
+            <button onclick="mostrarPregunta(3)">Siguiente</button>
+        </section>
+
+
+        <section id="p3" class="question" style="display: none;">
+            <h3>4 - PRACTICA</h3>
+            <img src="img007/04.png" alt="Imagen de la pregunta 2" class="question-image">
+            <label><input type="radio" value="1" name="p3" onclick="respuesta(3, this)"> A. </label>
+            <label><input type="radio" value="2" name="p3" onclick="respuesta(3, this)"> B. </label>
+            <label><input type="radio" value="3" name="p3" onclick="respuesta(3, this)"> C. </label>
+            <label><input type="radio" value="4" name="p3" onclick="respuesta(3, this)"> D. </label>
+            <label><input type="radio" value="5" name="p3" onclick="respuesta(3, this)"> E. </label>
+            <p id="mensaje-p3" class="mensaje"></p>
+            <div class="respuesta-imagen-contenedor"></div>
+            <button onclick="mostrarPregunta(2)">Anterior</button><br>
+            <button onclick="mostrarPregunta(4)">Siguiente</button>
+        </section>
+
+        <section id="p4" class="question" style="display: none;">
+            <h3>5 - PRACTICA</h3>
+            <img src="img007/05.png" alt="Imagen de la pregunta 2" class="question-image">
+            <label><input type="radio" value="1" name="p4" onclick="respuesta(4, this)"> A. </label>
+            <label><input type="radio" value="2" name="p4" onclick="respuesta(4, this)"> B. </label>
+            <label><input type="radio" value="3" name="p4" onclick="respuesta(4, this)"> C. </label>
+            <label><input type="radio" value="4" name="p4" onclick="respuesta(4, this)"> D. </label>
+            <label><input type="radio" value="5" name="p4" onclick="respuesta(4, this)"> E. </label>
+            <p id="mensaje-p4" class="mensaje"></p>
+            <div class="respuesta-imagen-contenedor"></div>
+            <button onclick="mostrarPregunta(3)">Anterior</button><br>
+            <button onclick="mostrarPregunta(5)">Siguiente</button>
+        </section>
+
+        <section id="p5" class="question" style="display: none;">
+            <h3>6 - PRACTICA</h3>
+            <img src="img007/06.png" alt="Imagen de la pregunta 2" class="question-image">
+            <label><input type="radio" value="1" name="p5" onclick="respuesta(5, this)"> A. </label>
+            <label><input type="radio" value="2" name="p5" onclick="respuesta(5, this)"> B. </label>
+            <label><input type="radio" value="3" name="p5" onclick="respuesta(5, this)"> C. </label>
+            <label><input type="radio" value="4" name="p5" onclick="respuesta(5, this)"> D. </label>
+            <label><input type="radio" value="5" name="p5" onclick="respuesta(5, this)"> E. </label>
+            <p id="mensaje-p5" class="mensaje"></p>
+            <div class="respuesta-imagen-contenedor"></div>
+            <button onclick="mostrarPregunta(4)">Anterior</button><br>
+            <button onclick="mostrarPregunta(6)">Siguiente</button>
+        </section>
+
+        <section id="p6" class="question" style="display: none;">
+            <h3>7 - PRACTICA</h3>
+            <img src="img007/07.png" alt="Imagen de la pregunta 2" class="question-image">
+            <label><input type="radio" value="1" name="p6" onclick="respuesta(6, this)"> A. </label>
+            <label><input type="radio" value="2" name="p6" onclick="respuesta(6, this)"> B. </label>
+            <label><input type="radio" value="3" name="p6" onclick="respuesta(6, this)"> C. </label>
+            <label><input type="radio" value="4" name="p6" onclick="respuesta(6, this)"> D. </label>
+            <label><input type="radio" value="5" name="p6" onclick="respuesta(6, this)"> E. </label>
+            <p id="mensaje-p6" class="mensaje"></p>
+            <div class="respuesta-imagen-contenedor"></div>
+            <button onclick="mostrarPregunta(5)">Anterior</button><br>
+            <button onclick="mostrarPregunta(7)">Siguiente</button>
+        </section>
+
+        <section id="p7" class="question" style="display: none;">
+            <h3>8 - PRACTICA</h3>
+            <img src="img007/08.png" alt="Imagen de la pregunta 2" class="question-image">
+            <label><input type="radio" value="1" name="p7" onclick="respuesta(7, this)"> A. </label>
+            <label><input type="radio" value="2" name="p7" onclick="respuesta(7, this)"> B. </label>
+            <label><input type="radio" value="3" name="p7" onclick="respuesta(7, this)"> C. </label>
+            <label><input type="radio" value="4" name="p7" onclick="respuesta(7, this)"> D. </label>
+            <label><input type="radio" value="5" name="p7" onclick="respuesta(7, this)"> E. </label>
+            <p id="mensaje-p7" class="mensaje"></p>
+            <div class="respuesta-imagen-contenedor"></div>
+            <button onclick="mostrarPregunta(6)">Anterior</button><br>
+            <button onclick="mostrarPregunta(8)">Siguiente</button>
+        </section>
+
+
+
+        <!-- Continúa añadiendo preguntas hasta la número 9 -->
+        <section id="p8" class="question" style="display: none;">
+            <h3>9 - PRACTICA</h3>
+            <img src="img007/09.png" alt="Imagen de la pregunta 9" class="question-image">
+            <label><input type="radio" value="1" name="p8" onclick="respuesta(8, this)"> A. </label>
+            <label><input type="radio" value="2" name="p8" onclick="respuesta(8, this)"> B. </label>
+            <label><input type="radio" value="3" name="p8" onclick="respuesta(8, this)"> C. </label>
+            <label><input type="radio" value="4" name="p8" onclick="respuesta(8, this)"> D. </label>
+            <label><input type="radio" value="5" name="p8" onclick="respuesta(8, this)"> E. </label>
+            <p id="mensaje-p8" class="mensaje"></p>
+            <div class="respuesta-imagen-contenedor"></div>
+            <button onclick="mostrarPregunta(7)">Anterior</button> <br>
+            <button onclick="mostrarPregunta(9)">Siguiente</button>
+        </section>
+
+        <section id="p9" class="question" style="display: none;">
+            <h3>10 - PRACTICA</h3>
+            <img src="img007/10.png" alt="Imagen de la pregunta 10" class="question-image">
+            <label><input type="radio" value="1" name="p9" onclick="respuesta(9, this)"> A. </label>
+            <label><input type="radio" value="2" name="p9" onclick="respuesta(9, this)"> B. </label>
+            <label><input type="radio" value="3" name="p9" onclick="respuesta(9, this)"> C. </label>
+            <label><input type="radio" value="4" name="p9" onclick="respuesta(9, this)"> D. </label>
+            <label><input type="radio" value="5" name="p9" onclick="respuesta(9, this)"> E. </label>
+            <p id="mensaje-p9" class="mensaje"></p>
+            <div class="respuesta-imagen-contenedor"></div>
+            <button onclick="mostrarPregunta(8)">Anterior</button><br>
+            <button onclick="mostrarResultados()">Finalizar</button>
+        </section>
+
+        <!-- Resultados -->
+        <section id="resultados" style="display: none;">
+            <h2>Resultados del cuestionario</h2>
+            <h3>Cantidad de acertadas: <span id="resultado">0</span></h3>
+            <div id="detalle"></div>
+            <div id="resumen" class="resumen"></div>
+        </section>
+    </div>
+</body>
+<script src="JS/javainter06.js"></script>
+</html>
