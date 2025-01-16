@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans';
+}
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+
+
+
+header {
+    background-color: #076108;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+header {
+    position: fixed; /* Hace que el header quede estático al hacer scroll */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    background-color: #076108; /* Fondo del header */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra debajo del header */
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+header .button {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+header .button:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+}
+
+
+body {
+    margin-top: 100px; /* Ajusta este valor según la altura del header para evitar solapamiento */
+}
+
+
+
+
+
+
+
+
+
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #9f8007;
+}
+
+.btn-primary:hover {
+    background-color: #666a03;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.logos img {
+    margin: 10px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #076108;
+    color: white;
+    padding: 10px 10px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Profile Section */
+.profile {
+    text-align: left;
+}
+
+.profile .image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Contact Section */
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Links Section */
+.links {
+    text-align: right;
+}
+
+.links p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.links ul li a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links {
+        text-align: center;
+    }
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+
+/* Copyright Section */
+.footer-copyright {
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #1e90ff; /* Línea decorativa */
+    padding-top: 5px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7); /* Blanco con un poco de transparencia */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.logos img {
+    margin: 10px;
+    height: 80px;
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición suave */
+}
+
+.logos img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+}
+
+/* Efecto al hacer clic en la imagen */
+.logos img:active {
+    transform: scale(1); /* Vuelve al tamaño original */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduce la sombra al hacer clic */
+}
+
+
+
+/* Estilos para la sección del simulador de exámenes */
+.interactive-exam {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.interactive-exam h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.interactive-exam .subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature .number {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: #4caf50;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.feature p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.6;
+}
+
